@@ -1,4 +1,9 @@
 .App {
+  /* text-align: center; */
+  height: 200vh;
+}
+
+header h2 {
   text-align: center;
 }
 
@@ -28,10 +33,34 @@
   color: #61dafb;
 }
 
+.exit-popup-btn {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 8px;
+  background-color: #526cfe;
+  color: #ffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.exit-popup-btn-wrap {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

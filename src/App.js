@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+
+import ExitPopup from './components/ExitPopup';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <h2>Exit Popup Demo</h2>
       </header>
+      <div className='main-content'>
+        <p>Below scenarios we can find exit pop dialog</p>
+        <ul>
+          <li>Mouseover to switch tabs</li>
+          <li>Set timeout after 5 seconds</li>
+          <li>Scroll down the page more than 300px.</li>
+        </ul>
+      </div>
+      <ExitPopup />
     </div>
   );
 }
